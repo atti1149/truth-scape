@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Content Analyzer",
+  "version": "1.0",
+  "description": "Analyzes webpage content and sends it to a backend for evaluation.",
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_title": "Hacker Control Panel"
+   },
+  "host_permissions": [
+    "http://localhost:3000/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.wikipedia.org/wiki/*"],
+      "js": ["report.js"],
+      "css":["injection.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
