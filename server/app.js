@@ -12,11 +12,12 @@ app.use(cors({
     origin: "*"
 }));
 
-app.use(express.static("public"));
+// Serve the public folder OUTSIDE the server folder
+app.use(express.static(path.join(__dirname, "..", "public")));
 
-// Make "/" load the website homepage
+// Serve the website homepage
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/website/index.html"));
+  res.sendFile(path.join(__dirname, "..", "public", "website", "index.html"));
 });
 
 app.use('/api',reportRouter)
