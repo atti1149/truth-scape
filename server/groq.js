@@ -16,6 +16,7 @@ async function getGroqChatCompletion(prompt) {
         content: prompt,
       },
     ],
+    temperature:0,
     model: "llama-3.1-8b-instant",
   });
 }
