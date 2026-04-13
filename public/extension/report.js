@@ -100,8 +100,8 @@
         </div>
         <button id="rate-btn">Rate</button>
         <div id="panel-content">
-            <h3>Rating: <span id="rating"></span></h3>
             <h3>Score: <span id="score"></span></h3>
+            <h3>Rating: <span id="rating"></span></h3>
             <h3>Summary: <span id="summary"></span></h3>
             <h3>Red Flags: <span id="red-flags"></span></h3>
         </div>
