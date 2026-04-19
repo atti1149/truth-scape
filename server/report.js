@@ -1,5 +1,5 @@
-const express = require('express');
-const ai = require('./groq');
+import express from 'express';
+import ai from './groq.js'
 const router = express.Router();
 
 router.post("/report", async (req, res) => {
@@ -64,4 +64,4 @@ Your summary must influence the score,not the other way around
 
 });
 
-module.exports = router;
+export default router

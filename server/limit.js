@@ -1,4 +1,5 @@
-const rateLimit=require('express-rate-limit')
+import {rateLimit} from 'express-rate-limit'
+
 const limiter = rateLimit({
 	windowMs: 5 * 60 * 1000, // 15 minutes
     limit: 10, 
@@ -8,4 +9,4 @@ const limiter = rateLimit({
         retryAfter:"15 minutes"
     }
 })
-module.exports=limiter;
+export default limiter;

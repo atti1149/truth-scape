@@ -1,13 +1,18 @@
-require('@dotenvx/dotenvx').config();
-const express=require('express');
-const path=require("path");
-const cors=require('cors');
-const reportRouter=require('./report');
-const logMiddleware=require('./log');
-const limitMiddleware=require('./limit');
-const testReport=require('./test-report');
+import dotenvx from '@dotenvx/dotenvx';
+dotenvx.config();
+import express from 'express'
+import path from 'path'
+import cors from 'cors'
+import reportRouter from './report.js'
+import logMiddleware from './log.js'
+import limitMiddleware from './limit.js'
+//const testReport=require('./test-report');
 const app=express();
 const PORT=process.env.PORT;
+
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 app.use(express.json());
 
@@ -24,7 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.use('/api',logMiddleware,limitMiddleware,reportRouter);
-app.use('/api',logMiddleware,limitMiddleware,testReport);
+//app.use('/api',logMiddleware,limitMiddleware,testReport);
 
 app.listen(PORT,()=>{
     console.log(`Server running on port: ${PORT}`);

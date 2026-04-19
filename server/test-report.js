@@ -1,6 +1,7 @@
-const express = require('express');
+import express from 'express'
 const router = express.Router();
 
+//ONLY USE THIS IF YOU NEED TO TEST THAT THE FRONT-END IS CONNECTING PROPERLY
 router.post("/test-report", async (req, res) => {
 
   const reportObj = {
@@ -13,4 +14,4 @@ router.post("/test-report", async (req, res) => {
   res.json(reportObj);
 });
 
-module.exports = router;
+export default express;

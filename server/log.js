@@ -8,4 +8,4 @@ function log(req,res,next){
     console.log(`Request by: ${token} at ${new Date().toISOString()} with method ${req.method} from IP ${ip}`);
     next()
 }
-module.exports=log
+export default log
