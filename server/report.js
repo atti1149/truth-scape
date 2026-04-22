@@ -27,7 +27,7 @@ URL: ${url}
 
 RULES:
 - A claim is FALSE only if it contradicts known facts. A claim is NOT false just because it is unsupported or not mentioned in the sample. Missing evidence does NOT count as evidence against the claim. Only penalize claims that are factually incorrect.
-- Red flags must ONLY refer to factual inaccuracies, fabricated entities, impossible claims, or invented events. Missing explanations, unclear writing, or lack of detail are NOT red flags.
+- Red flags must ONLY refer to factual inaccuracies, fabricated entities, impossible claims, or invented events. Missing explanations, unclear writing, or lack of detail are NOT red flags. If you penalize for missing information, or list missing information in red flags, you are wrong.
 - "Unsupported" means the sample does not provide enough information to determine whether the claim is central or not. Unsupported DOES NOT mean the claim is false.
 - A central claim is only disqualifying if it is factually false. Unsupported central claims must NOT be penalized.
 - 2+ major penalties → cap score at 50.

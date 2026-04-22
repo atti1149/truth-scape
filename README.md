@@ -12,7 +12,7 @@ Truth-Scape is a browser extension that adds a widget to Wikipedia pages. With a
 cd C:\Where\You\Want\This\To\Go
 git clone https://github.com/atti-1149/truth-scape.git
 cd truth-scape
-npm install
+pnpm install
 ```
 
 ### Setting up the API Key
@@ -51,7 +51,7 @@ Run: npm start
 - groq-sdk
 
 ## Licence
-See licence file
+MIT - see licence file
 
 ## Additional notes
 
