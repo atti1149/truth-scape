@@ -10,7 +10,7 @@
     "storage"
   ],
   "action": {
-    "default_title": "Hacker Control Panel"
+    "default_title": "Truth-scape"
    },
   "host_permissions": [
     "http://localhost:3000/*"
