@@ -18,7 +18,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.wikipedia.org/wiki/*"],
+      "matches": ["*://*.wikipedia.org/wiki/*","*://*.fandom.com/wiki*"],
       "js": ["report.js"],
       "css":["injection.css"],
       "run_at": "document_end"
