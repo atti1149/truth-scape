@@ -2,7 +2,7 @@
 
 ## Overview
 
-Truth-Scape is a browser extension that adds a widget to Wikipedia pages. With a single click, you can check how trustworthy the page is, view red flags, and see a score from 0–100. Feel free to customize or extend the project however you like.
+Truth-Scape is a browser extension that adds a widget to Wikipedia pages. With a single click, you can check how trustworthy the page is, view red flags, and see a score from 0–100. It is powered by the llama-3-instant AI model, powered by the Groq API. Feel free to customize or extend the project however you like.
 
 ## Installation (For Developers)
 

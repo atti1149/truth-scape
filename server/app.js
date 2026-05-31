@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "public", "website", "index.html"));
 });
 
-app.use('/api',logMiddleware,limitMiddleware,reportRouter);
+app.use('/api/wiki',logMiddleware,limitMiddleware,reportRouter);
 //app.use('/api',logMiddleware,limitMiddleware,testReport);
 
 app.listen(PORT,()=>{

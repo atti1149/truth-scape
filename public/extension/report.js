@@ -60,7 +60,7 @@
   async function fetchReport(){
       const ssk=getToken()
       try{
-          const res=await fetch("http://localhost:3000/api/report",{
+          const res=await fetch("http://localhost:3000/api/wiki/report",{
               method:"POST",
               headers:{
                   "Content-Type":"application/json",
