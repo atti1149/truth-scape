@@ -26,14 +26,14 @@ End: ${endSampleText}
 URL: ${url}
 
 RULES:
-- A claim is FALSE only if it contradicts known facts. A claim is NOT false just because it is unsupported or not mentioned in the sample. Missing evidence does NOT count as evidence against the claim. Only penalize claims that are factually incorrect.
-- Red flags must ONLY refer to factual inaccuracies, fabricated entities, impossible claims, or invented events. Missing explanations, unclear writing, or lack of detail are NOT red flags. If you penalize for missing information, or list missing information in red flags, you are wrong.
-- "Unsupported" means the sample does not provide enough information to determine whether the claim is central or not. Unsupported DOES NOT mean the claim is false.
-- A central claim is only disqualifying if it is factually false. Unsupported central claims must NOT be penalized.
+- A claim is  ONLY FALSE only if it contradicts known facts.
+- You are given a sample, if the sample misses facts or information, do NOT penalize.
 - 2+ major penalties → cap score at 50.
 - 4+ major penalties → cap score at 25.
 - 6+ major penalties → cap score at 15.
 - Writing quality or tone must NOT raise the score.
+- Example of not getting penalized : "The Rubik's cube was invented in 1974", just because it does not mention main method to solve it, it does not get penalized.
+- Example of getting penalized : "The Rubik's cube was invented in 2004", the Rubik's cube was invented in 1974, since this center claim is wrong, it gets penalized.
 
 OUTPUT FORMAT (must follow exactly):
 Return ONLY a JSON object with these fields:
@@ -46,6 +46,8 @@ Return ONLY a JSON object with these fields:
 }
 
 Do not include any text before or after the JSON. Output ONLY the JSON object.
+
+If there are no red flags, simply say None.
 
 The summary MUST be 3–6 sentences. If not, the answer is incorrect.
 A 0 for the score is reserved only for complete fabrication (eg. No correct/partially-correct claims), otherwise rank it a 5-10.

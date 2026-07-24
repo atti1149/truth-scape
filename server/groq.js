@@ -17,7 +17,7 @@ async function getGroqChatCompletion(prompt) {
       },
     ],
     temperature:0,
-    model: "llama-3.1-8b-instant",
+    model: "llama-3.3-70b-versatile",
   });
 }
 export default ai
