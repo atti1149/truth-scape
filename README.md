@@ -2,7 +2,7 @@
 
 ## Overview
 
-Truth-Scape is a browser extension that adds a widget to Wikipedia pages. With a single click, you can check how trustworthy the page is, view red flags, and see a score from 0–100. It is powered by the llama-3-instant AI model, powered by the Groq API. Feel free to customize or extend the project however you like.
+Truth-Scape is a browser extension that adds a widget to Wikipedia pages. With a single click, you can check how trustworthy the page is, view red flags, and see a score from 0–100. It uses the AI model Qwen 3.8, powered by the Groq API. Feel free to customize or extend the project however you like.
 
 ## Installation (For Developers)
 
@@ -14,7 +14,7 @@ git clone https://github.com/atti-1149/truth-scape.git
 cd truth-scape
 pnpm install
 ```
-
+Please make sure that you have both node.js as well as pnpm installed
 ### Setting up the API Key
 
 1. Go to console.groq.com
@@ -42,7 +42,11 @@ pnpm install
 Whenever you make updates to source code in public/extension: go to {browser name}://extensions, find your extension, and select Reload
 
 ### Server
-Run: npm start
+To run: 
+
+```bash
+pnpm start
+```
 
 ## Dependencies
 

@@ -17,7 +17,7 @@ async function getGroqChatCompletion(prompt) {
       },
     ],
     temperature:0,
-    model: "llama-3.3-70b-versatile",
+    model:"qwen/qwen3.8-27b", //Alt model is the is llama-3.1-8b-instant, main is llama-3.3-70b-versatile
   });
 }
 export default ai

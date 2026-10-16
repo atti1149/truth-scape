@@ -1,10 +1,15 @@
+:root{
+  --main-color: #8fd2ff;
+  --secondary-color: #2067ba;
+  --text-color:  #90EE90;
+}
 #main-panel {
   position: fixed;
   top: 20px;
   right: 20px;
   width: 350px;
   max-height: 80vh;
-  background: lightgrey;
+  background: black;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -12,6 +17,7 @@
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
+  
 }
 .fade-in {
   opacity: 0;
@@ -24,7 +30,7 @@
 }
 
 #header{
-  background-color:#3A5BA0;
+  background-color: var(--secondary-color);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 0px;
@@ -49,6 +55,7 @@
   margin-top: 8px;
   overflow-y: auto;
   max-height: 60vh;
+  color: #90EE90;
 }
 
 #main-panel h2 {
@@ -64,11 +71,12 @@
   margin: 8px 12px;
   word-wrap: break-word;
   text-align: center;
+  color: var(--text-color);
 }
 #minimize-btn {
   background: none;
   border: none;
-  color: white;
+  color: var(--text-color);
   font-size: 18px;
   cursor: pointer;
   opacity: 0.8;
@@ -83,8 +91,8 @@
 #rate-btn {
   display: inline-block;
   padding: 8px 12px;
-  background: #3A5BA0;
-  color: white;
+  background: var(--secondary-color);
+  color: var(--text-color);
   border: none;
   border-radius: 4px;
   cursor: pointer;
